@@ -1,0 +1,17 @@
+{
+  "name": "am-event-emmiter",
+  "version": "1.0.0",
+  "description": "Custom Event emitter for JavaScript. You can be able to register and  Unregister, mute & Unmute event written in core JavaScript no external lib required ",
+  "main": "am.emmiter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Java Script Event Emmiter",
+    "Custom Event Emmiter in Java Script",
+    "Mute and Unmute Event",
+    "Multi register event emmiter"
+  ],
+  "author": "Amin Kodaganur",
+  "license": "MIT"
+}

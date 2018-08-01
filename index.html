@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<script src="am.emmiter.js"></script>
+<script>
+//Usage
+
+//Create Instance
+var eventEmitter = new amEventEmitter();
+
+
+//Quick Example
+eventEmitter.register('event1', function(){
+    console.log('Event1 emitted');
+});
+
+eventEmitter.emit('event1');  
+
+
+//Passing data Example
+eventEmitter.register('event2', function(data){
+    console.log('event2 emitted with data',data);
+});
+
+eventEmitter.emit('event2',{'name' : 'Jhon Potter'});  
+
+
+//Multiple register to same event
+eventEmitter.register('event3', function(data){
+    console.log('event3 emitted!! first register',data);
+});
+
+eventEmitter.register('event3', function(data){
+    console.log('event3 emitted!! second register',data);
+});
+
+eventEmitter.emit('event3',{'name' : 'Jhon Potter'});  
+
+
+//Singal event emitting multiple times with different data
+eventEmitter.register('event4', function(data){
+    console.log('event4 emitted!! ',data);
+});
+eventEmitter.emit('event4',{'name' : 'Jhon Potter'});  
+eventEmitter.emit('event4',{'name' : 'Harry Potter'});  
+
+
+//Mutting & UnMutting event
+eventEmitter.register('event5', function(data){
+    console.log('event5 emitted!! ',data);
+});
+eventEmitter.emit('event5',{'name' : 'Jhon Potter'});  
+eventEmitter.mute('event5');
+eventEmitter.emit('event5',{'name' : 'Harry Potter'});  
+eventEmitter.unmute('event5');
+eventEmitter.emit('event5',{'name' : 'Mark welson'}); 
+</script>
+<body>
+    <h1>Open Console to see out put</h1>
+</body>
+</html>
