@@ -33,7 +33,7 @@ var eventEmitter = new amEventEmitter();
   
  
   #### More Options 
-  ##### Emiting with data
+  ##### Emitting with data
   ```sh
   eventEmitter.register('event2', function(data){
     console.log('event2 emitted with data',data);
@@ -55,7 +55,7 @@ eventEmitter.register('event3', function(data){
 eventEmitter.emit('event3',{'name' : 'Jhon Potter'});
   ```
   
-  ##### Singal event emitting multiple times with different data
+  ##### Emitting single event multiple times with different data
   
   ```sh
   eventEmitter.register('event4', function(data){
@@ -78,7 +78,7 @@ eventEmitter.unmute('event5');
 eventEmitter.emit('event5',{'name' : 'Mark welson'}); 
   ```
   
-  #### Exeption handling 
+  #### Exception handling 
   Wrap `register`,  `emit`, `mute` and `unmute` method with try & catch block.
   
   ```sh
