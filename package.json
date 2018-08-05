@@ -1,6 +1,6 @@
 {
   "name": "am-event-emmiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Event emitter for JavaScript. You can be able to register and  Unregister, mute & Unmute event written in core JavaScript no external lib required ",
   "main": "am.emmiter.js",
   "keywords": [
@@ -16,8 +16,9 @@
     "emitter",
     "pubsub"
   ],
-  "repository" :{ 
-    "type" : "git", "url" : "https://github.com/aminkodaganur/amEventEmitter"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aminkodaganur/amEventEmitter"
   },
   "author": "Amin Kodaganur",
   "license": "MIT"
