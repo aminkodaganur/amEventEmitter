@@ -7,7 +7,11 @@ Custom Quick &amp; Easy Java Script Event Emitter no need of any third party lib
  ```sh
  <script src="am.emmiter.js"></script>
  ```
- 
+ Or do
+ ```sh
+ npm install am-event-emmiter
+ ```
+
  # Examples
  `Refer index.html in this repo`
 
